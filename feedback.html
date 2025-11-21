@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shoffee</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #f6d6c3, #e7c7b4, #f8e3d6);
+            font-family: Arial, sans-serif;
+            cursor: url('maroon-cursor.png'), auto;
+        }
+        .title {
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            font-family: "Times New Roman", serif;
+            color: #ac2357;
+            padding-top: 40px;
+        }
+        .menu-bar {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .menu-btn {
+            background: #f5c2a5;
+            padding: 12px 18px;
+            margin: 10px;
+            border-radius: 30px;
+            color: #53163c;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .menu-btn:hover {
+            background: #da9367;
+            box-shadow: 0 0 10px #742d58;
+            cursor: url('maroon-cursor.png'), auto;
+        }
+        .box {
+            background: rgba(196, 148, 155, 0.7);
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            text-align: center;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        
+        .box h2 {
+            font-family: "Georgia", serif;
+            font-size: 35px;
+            color: #520630;
+            font-weight: bold;
+        }
+        .stars span {
+            font-size: 35px;
+            cursor: pointer;
+            color: #999;
+            transition: 0.3s;
+        }
+        .stars span.selected {
+            color: gold;
+        }
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid #742d58;
+            font-size: 16px;
+            font-family: Arial;
+        }
+        .submit-btn {
+            background: #da9367;
+            padding: 12px 25px;
+            border-radius: 20px;
+            color: #53163c;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            box-shadow: 0 0 10px #742d58;
+            cursor: url('maroon-cursor.png'), auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Coffee Shoffee</h1>
+    <div class="menu-bar">
+        <a class="menu-btn" href="index.html">HOME</a>
+        <a class="menu-btn" href="menu.html">MENU</a>
+        <a class="menu-btn" href="branches.html">BRANCHES</a>
+        <a class="menu-btn" href="orders.html">ONLINE ORDERS</a>
+        <a class="menu-btn" href="feedback.html">CUSTOMER FEEDBACK</a>
+    </div>
+    <div class="box" id="feedback">
+        <h2>Customer Feedback Form</h2>
+        <p>Dear customer, your feedback is necessary to make our services more aesthetic for you so that we don't spoil your 'me-time'. Please give us ratings out of 5 stars and fill the following details.</p>
+
+        <form onsubmit="submitFeedback(); return false;">
+
+            <input type="text" placeholder="Your Name" required><br>
+
+            <input type="text" placeholder="What did you order?" required><br>
+
+            <input type="text" placeholder="Did you like it?" required><br>
+
+            <input type="text" placeholder="How much time did delivery take?" required><br>
+
+            <h3>Rate Us</h3>
+
+            <div class="stars" id="starRating">
+                <span data-star="1">★</span>
+                <span data-star="2">★</span>
+                <span data-star="3">★</span>
+                <span data-star="4">★</span>
+                <span data-star="5">★</span>
+            </div>
+
+            <br>
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
