@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shoffee</title>
+  <style>
+    body {
+            margin: 0;
+            background: linear-gradient(135deg, #f6d6c3, #e7c7b4, #f8e3d6);
+            font-family: Arial, sans-serif;
+            cursor: url('maroon-cursor.png'), auto;
+    }
+    .title {
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            font-family: "Times New Roman", serif;
+            color: #ac2357;
+            padding-top: 40px;
+        }
+    .menu-bar {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .menu-btn {
+            background: #f5c2a5;
+            padding: 12px 18px;
+            margin: 10px;
+            border-radius: 30px;
+            color: #53163c;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .menu-btn:hover {
+            background: #da9367;
+            box-shadow: 0 0 10px #742d58;
+            cursor: url('maroon-cursor.png'), auto;
+        }
+    .box {
+            background: rgba(196, 148, 155, 0.7);
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            text-align: center;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        
+        .box h2 {
+            font-family: "Georgia", serif;
+            font-size: 35px;
+            color: #520630;
+            font-weight: bold;
+        }
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: separate;
+            border-spacing: 10px;
+            background: #f7c6d0;
+            border: 3px solid #b3007a;
+            font-family: "Georgia", serif;
+            font-size: 18px;
+            color: #4a0038;
+        }
+        th, td {
+            padding: 15px;
+            border: 2px solid #b3007a;
+        }
+        th {
+            font-size: 22px;
+            font-weight: bold;
+        }
+  </style>
+</head>
+<body>
+    <button id="darkToggle">Dark Mode</button>
+
+    <h1 class="title">Coffee Shoffee</h1>
+    <div class="menu-bar">
+        <a class="menu-btn" href="index.html">HOME</a>
+        <a class="menu-btn" href="menu.html">MENU</a>
+        <a class="menu-btn" href="branches.html">BRANCHES</a>
+        <a class="menu-btn" href="orders.html">ONLINE ORDERS</a>
+        <a class="menu-btn" href="feedback.html">CUSTOMER FEEDBACK</a>
+    </div>
+  <div class="box" id="menu">
+        <h2>Our Coffee Menu</h2>
+
+        <table>
+            <tr>
+                <th>S.No</th>
+                <th>Coffee Name</th>
+                <th>Features</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>1</td><td>Latte</td><td>Mixed with Indian spices</td><td>₹200</td>
+            </tr>
+            <tr>
+                <td>2</td><td>Caramel Frappuccino</td><td>With exotic twist</td><td>₹500</td>
+            </tr>
+            <tr>
+                <td>3</td><td>Mocha Bliss</td><td>Dark chocolate fusion</td><td>₹350</td>
+            </tr>
+            <tr>
+                <td>4</td><td>Hazelnut Dream</td><td>Rich nutty aroma</td><td>₹280</td>
+            </tr>
+            <tr>
+                <td>5</td><td>Vanilla Ice Brew</td><td>Cold creamy delight</td><td>₹320</td>
+            </tr>
+            <tr>
+                <td>6</td><td>Espresso Royal</td><td>Strong, bold, pure shot</td><td>₹180</td>
+            </tr>
+            <tr>
+                <td>7</td><td>Irish Velvet Coffee</td><td>Creamy, velvet richness</td><td>₹450</td>
+            </tr>
+            <tr>
+                <td>8</td><td>Chocolate Cinnamon Brew</td><td>Hot cocoa with cinnamon swirls</td><td>₹320</td>
+            </tr>
+            <tr>
+                <td>9</td><td>Rose Latte</td><td>Infused with rose essence</td><td>₹280</td>
+            </tr>
+            <tr>
+                <td>10</td><td>Spiced Filter Coffee</td><td>South Indian filter with spices</td><td>₹150</td>
+            </tr>
+            <tr>
+                <td>11</td><td>Almond Cappuccino</td><td>Foamy almond blend</td><td>₹300</td>
+            </tr>
+            <tr>
+                <td>12</td><td>Blueberry Cold Brew</td><td>Refreshing berry touch</td><td>₹380</td>
+            </tr>
+            <tr>
+                <td>13</td><td>Maple Crunch Latte</td><td>Maple syrup with caramel crunch</td><td>₹420</td>
+            </tr>
+            <tr>
+                <td>14</td><td>Coconut Mocha</td><td>Coconut milk + mocha fusion</td><td>₹350</td>
+            </tr>
+            <tr>
+                <td>15</td><td>Saffron Affogato</td><td>Ice cream soaked in saffron espresso</td><td>₹600</td>
+            </tr>
+        </table>
+    </div>
+   
+</body>
+</html>
