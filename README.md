@@ -1,2 +1,2 @@
 # Coffee-Shoffee
-a cute Coffee Shop
+A cute Coffee Shop
