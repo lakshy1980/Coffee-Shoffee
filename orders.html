@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #f6d6c3, #e7c7b4, #f8e3d6);
+            font-family: Arial, sans-serif;
+            cursor: url('maroon-cursor.png'), auto;
+        }
+        .title {
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            font-family: "Times New Roman", serif;
+            color: #ac2357;
+            padding-top: 40px;
+        }
+        .menu-bar {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .menu-btn {
+            background: #f5c2a5;
+            padding: 12px 18px;
+            margin: 10px;
+            border-radius: 30px;
+            color: #53163c;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .menu-btn:hover {
+            background: #da9367;
+            box-shadow: 0 0 10px #742d58;
+            cursor: url('maroon-cursor.png'), auto;
+        }
+        .box{
+            background: rgba(196, 148, 155, 0.7);
+            width: 80%;
+            margin: 30px auto;
+            padding: 25px;
+            text-align: center;
+            border-radius: 20px;
+            backdrop-filter: blur(5px);
+            font-family: "Georgia", serif;
+            font-size: 35px;
+            color: #520630;
+            font-weight: bold;
+            }
+    </style>
+</head>
+<body>
+    <h1 class="title">Coffee Shoffee</h1>
+
+    <div class="menu-bar">
+        <a class="menu-btn" href="index.html">HOME</a>
+        <a class="menu-btn" href="menu.html">MENU</a>
+        <a class="menu-btn" href="branches.html">BRANCHES</a>
+        <a class="menu-btn" href="orders.html">ONLINE ORDERS</a>
+        <a class="menu-btn" href="feedback.html">CUSTOMER FEEDBACK</a>
+    </div>
+    <div class="box" id="order">
+    <h2>Online Orders</h2>
+
+    <table style="width:90%; margin:auto; background:#f7c6d6;
+    border:3px solid magenta; border-collapse:separate;
+    border-spacing:10px; padding:10px; font-family:Georgia; font-size:20px;">
+
+        <tr>
+            <th>Select</th>
+            <th>Serial No.</th>
+            <th>Coffee Name</th>
+            <th>Feature</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="200"></td>
+            <td>1</td>
+            <td>Latte</td>
+            <td>Mixed with Indian spices</td>
+            <td>₹200</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="500"></td>
+            <td>2</td>
+            <td>Caramel Frappuccino</td>
+            <td>Exotic caramel twist</td>
+            <td>₹500</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="350"></td>
+            <td>3</td>
+            <td>Mocha Bliss</td>
+            <td>Belgian chocolate blend</td>
+            <td>₹350</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="280"></td>
+            <td>4</td>
+            <td>Hazelnut Dream</td>
+            <td>Nutty roasted aroma</td>
+            <td>₹280</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="320"></td>
+            <td>5</td>
+            <td>Vanilla Ice Brew</td>
+            <td>Cold creamy vanilla</td>
+            <td>₹320</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="180"></td>
+            <td>6</td>
+            <td>Espresso Royal</td>
+            <td>Strong, bold & rich</td>
+            <td>₹180</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="450"></td>
+            <td>7</td>
+            <td>Irish Velvet Coffee</td>
+            <td>Silky smooth Irish mix</td>
+            <td>₹450</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="320"></td>
+            <td>8</td>
+            <td>Chocolate Cinnamon Brew</td>
+            <td>Warm chocolate cinnamon</td>
+            <td>₹320</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="280"></td>
+            <td>9</td>
+            <td>Rose Latte</td>
+            <td>Rose-infused milk foam</td>
+            <td>₹280</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="150"></td>
+            <td>10</td>
+            <td>Spiced Filter Coffee</td>
+            <td>Classic aromatic spices</td>
+            <td>₹150</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="300"></td>
+            <td>11</td>
+            <td>Almond Cappuccino</td>
+            <td>Almond milk & soft foam</td>
+            <td>₹300</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="380"></td>
+            <td>12</td>
+            <td>Blueberry Cold Brew</td>
+            <td>Refreshing fruity cold brew</td>
+            <td>₹380</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="420"></td>
+            <td>13</td>
+            <td>Maple Crunch Latte</td>
+            <td>Maple syrup & crunch flakes</td>
+            <td>₹420</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="350"></td>
+            <td>14</td>
+            <td>Coconut Mocha</td>
+            <td>Coconut + dark chocolate</td>
+            <td>₹350</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox" class="coffee" value="600"></td>
+            <td>15</td>
+            <td>Saffron Affogato</td>
+            <td>Royal saffron gelato shot</td>
+            <td>₹600</td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <label>
+        <input type="checkbox" id="bag"> Add Paper Bag (+₹15)
+    </label>
+
+    <br><br>
+
+    <button type="button" onclick="printBill()">Print Your Bill</button>
+
+    <h3 id="billOutput"></h3>
+
+    <br>
+
+    <button type="button" onclick="payCash()">Pay Bill (Cash)</button>
+    <button type="button" onclick="payOnline()">Pay Bill (Online)</button>
+</div>
+
+<script>
+function printBill() {
+    let total = 0;
+
+    document.querySelectorAll(".coffee:checked").forEach(coffee => {
+        total = total + Number(coffee.value);
+    });
+
+    if (document.getElementById("bag").checked) {
+        total = total + 15;
+    }
+
+    let gst = total * 0.05;
+    let finalAmount = total + gst;
+
+    document.getElementById("billOutput").innerHTML =
+        "Total Amount = ₹" + finalAmount.toFixed(2);
+}
+</script>
+<div id="cashSection" style="display:none;">
+    <h3>Enter Your Address</h3>
+
+    <form>
+        <label>Full Address:</label><br>
+        <textarea style="width:300px; height:80px;"></textarea><br><br>
+
+        <button type="button" onclick="confirmCash()">Submit</button>
+    </form>
+
+    <h3 id="cashMessage"></h3>
+</div>
+
+<div id="onlineSection" style="display:none;">
+    <h3>Scan the QR Code to Pay</h3>
+
+    <img id="qrImage" src="" style="width:200px; height:200px; border:2px solid black;"><br><br>
+
+    <p>Please scan the QR code within 2 minutes to complete your payment.</p>
+
+    <button type="button" onclick="confirmOnline()">I Have Paid</button>
+
+    <h3 id="onlineMessage"></h3>
+</div>
+
+<script>
+    function payCash() {
+        document.getElementById("cashSection").style.display = "block";
+        document.getElementById("onlineSection").style.display = "none";
+    }
+    function confirmCash() {
+        document.getElementById("cashMessage").innerHTML =
+            "Thanks, your order will arrive soon.";
+    }
+    function payOnline() {
+        document.getElementById("cashSection").style.display = "none";
+        document.getElementById("onlineSection").style.display = "block";
+        let randomNum = Math.floor(Math.random() * 100000);
+
+        document.getElementById("qrImage").src =
+            "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=Order" + randomNum;
+    }
+
+    // ONLINE CONFIRMATION
+    function confirmOnline() {
+        document.getElementById("onlineMessage").innerHTML =
+            "Thank you, if your payment is successful, your order will arrive shortly.";
+    }
+    
+</script>
+</body>
+</html>
